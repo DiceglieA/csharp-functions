@@ -35,7 +35,13 @@ printArray(array);
 
 //Stampare la somma di tutti i numeri
 
+int somma = sommaElementiArray(array);
+Console.WriteLine($"La somma degli elementi è {somma}");
 
+//stampare la somma dei quadrati
+
+int sommaQuadrati = sommaElementiArray(arrayElevatoAlQuadrato);
+Console.WriteLine($"La somma dei quadrati degli elementi è {sommaQuadrati}");
 
 
 
