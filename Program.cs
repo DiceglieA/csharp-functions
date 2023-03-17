@@ -12,8 +12,32 @@
 //A questo punto modificare il programma in modo che chieda all’utente quanti numeri voglia inserire, e dopo di che questi vengono inseriti a mano dall’utente esternamente. Rieseguire il programma con l’input preso esternamente dall’utente.
 
 
-Console.WriteLine("Il mio array");
-printArray(new[] { 2, 6, 7, 5, 3, 9 });
+//array dato
+int[] array = new int[] { 2, 6, 7, 5, 3, 9 };
+
+// Funzione stampa array
+Console.WriteLine("il mio array");
+printArray(array);
+
+
+// Stampare l'array di numeri elevati al quadrato
+int[] arrayElevatoAlQuadrato = ElevaArrayAlQuadrato(array);
+Console.WriteLine("Array elevato al quadrato: ");
+foreach (int num in arrayElevatoAlQuadrato)
+{
+    Console.Write(num + " ");
+}
+Console.WriteLine();
+
+//controllo dell'array
+Console.WriteLine("il mio array non è stato modificato");
+printArray(array);
+
+
+
+
+
+//utilities
 void printArray(int[] array)
 {
     Console.WriteLine(arrayToString(array));
