@@ -43,3 +43,26 @@ int Quadrato(int number)
     int square = number * number;
     return square;
 }
+
+int[] ElevaArrayAlQuadrato(int[] array)
+{
+    int[] arrayCopy = (int[])array.Clone();
+
+    for (int i = 0; i < arrayCopy.Length; i++)
+    {
+        arrayCopy[i] = Quadrato(arrayCopy[i]);
+    }
+    return arrayCopy;
+}
+
+int sommaElementiArray(int[] array)
+{
+
+    int sum = 0;
+
+    foreach (int num in array)
+    {
+        sum += num;
+    }
+    return sum;
+}
