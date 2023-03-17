@@ -20,7 +20,7 @@ Console.WriteLine("il mio array");
 printArray(array);
 
 
-// Stampare l'array di numeri elevati al quadrato
+// Array di numeri elevati al quadrato
 int[] arrayElevatoAlQuadrato = ElevaArrayAlQuadrato(array);
 Console.WriteLine("Array elevato al quadrato: ");
 foreach (int num in arrayElevatoAlQuadrato)
@@ -32,6 +32,9 @@ Console.WriteLine();
 //controllo dell'array
 Console.WriteLine("il mio array non è stato modificato");
 printArray(array);
+
+//Stampare la somma di tutti i numeri
+
 
 
 
