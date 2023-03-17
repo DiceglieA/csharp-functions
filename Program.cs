@@ -19,7 +19,6 @@ int[] array = new int[] { 2, 6, 7, 5, 3, 9 };
 Console.WriteLine("il mio array");
 printArray(array);
 
-
 // Array di numeri elevati al quadrato
 int[] arrayElevatoAlQuadrato = ElevaArrayAlQuadrato(array);
 Console.WriteLine("Array elevato al quadrato: ");
@@ -36,15 +35,12 @@ printArray(array);
 //Stampare la somma di tutti i numeri
 
 int somma = sommaElementiArray(array);
-Console.WriteLine($"La somma degli elementi è {somma}");
+Console.WriteLine($"La somma dei numeri è {somma}");
 
 //stampare la somma dei quadrati
 
 int sommaQuadrati = sommaElementiArray(arrayElevatoAlQuadrato);
-Console.WriteLine($"La somma dei quadrati degli elementi è {sommaQuadrati}");
-
-
-
+Console.WriteLine($"La somma dei quadrati è {sommaQuadrati}");
 
 //utilities
 void printArray(int[] array)
